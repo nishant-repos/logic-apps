@@ -16,6 +16,18 @@
     },
     "sftpwithssh_1_Connection_Name": {
       "value": "sftpwithssh1"
+    },
+    "sftpwithssh_1_hostName": {
+      "value": "test.rebex.net"
+    },
+    "sftpwithssh_1_userName": {
+      "value": "demo"
+    },
+    "sftpwithssh_1_password": {
+      "value": "password"
+    },
+    "sftpwithssh_1_portNumber": {
+      "value": 22
     }
   }
 }
