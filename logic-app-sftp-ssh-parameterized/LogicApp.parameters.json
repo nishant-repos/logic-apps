@@ -3,19 +3,19 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "logicAppName": {
-      "value": "logic-with-sftp-ssh"
+      "value": "logic-sftp-ssh-2"
     },
     "logicAppLocation": {
-      "value": "centralindia"
+      "value": "southindia"
     },
     "integration_account": {
-      "value": "ia-logic_app"
+      "value": "ia-logic-demo"
     },
     "LogicAppIntegrationAccount": {
-      "value": "[concat('/subscriptions/16be532f-d207-4d70-966d-c6ba9ad7d410/resourcegroups/Naman-Interns-RG/providers/Microsoft.Logic/integrationAccounts/', parameters('integration_account'))]"
+      "value": "/subscriptions/16be532f-d207-4d70-966d-c6ba9ad7d410/resourcegroups/Naman-Interns-RG/providers/Microsoft.Logic/integrationAccounts/ia-logic-demo"
     },
     "sftpwithssh_1_Connection_Name": {
-      "value": "sftpwithssh"
+      "value": "sftpwithssh1"
     }
   }
 }
