@@ -1,0 +1,21 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "logicAppName": {
+      "value": "logic-with-sftp-ssh"
+    },
+    "logicAppLocation": {
+      "value": "centralindia"
+    },
+    "integration_account": {
+      "value": "ia-logic_app"
+    },
+    "LogicAppIntegrationAccount": {
+      "value": "/subscriptions/16be532f-d207-4d70-966d-c6ba9ad7d410/resourcegroups/Naman-Interns-RG/providers/Microsoft.Logic/integrationAccounts/[parameters('integration_account')]"
+    },
+    "sftpwithssh_1_Connection_Name": {
+      "value": "sftpwithssh"
+    }
+  }
+}
