@@ -118,7 +118,7 @@
               "inputs": {
                 "host": {
                   "connection": {
-                    "name": "@parameters('$connections')['sftpwithssh-1']['connectionId']"
+                    "name": "@parameters('$connections')['NewSFTP']['connectionId']"
                   }
                 },
                 "method": "post",
@@ -145,7 +145,7 @@
               "inputs": {
                 "host": {
                   "connection": {
-                    "name": "@parameters('$connections')['sftpwithssh-1']['connectionId']"
+                    "name": "@parameters('$connections')['NewSFTP']['connectionId']"
                   }
                 },
                 "method": "get",
@@ -210,8 +210,8 @@
         "parameters": {
           "$connections": {
             "value": {
-              "sftpwithssh-1": {
-                "id": "[concat(subscription().id, '/providers/Microsoft.Web/locations/', parameters('logicAppLocation'), '/managedApis/', 'sftpwithssh-1')]",
+              "NewSFTP": {
+                "id": "[concat(subscription().id, '/providers/Microsoft.Web/locations/', parameters('logicAppLocation'), '/managedApis/', 'NewSFTP')]",
                 "connectionId": "[resourceId('Microsoft.Web/connections', parameters('sftpwithssh_1_Connection_Name'))]",
                 "connectionName": "[parameters('sftpwithssh_1_Connection_Name')]"
               }
@@ -233,7 +233,7 @@
       "location": "[parameters('logicAppLocation')]",
       "properties": {
         "api": {
-          "id": "[concat(subscription().id, '/providers/Microsoft.Web/locations/', parameters('logicAppLocation'), '/managedApis/', 'sftpwithssh-1')]"
+          "id": "[concat(subscription().id, '/providers/Microsoft.Web/locations/', parameters('logicAppLocation'), '/managedApis/', 'NewSFTP')]"
         },
         "displayName": "[parameters('sftpwithssh_1_Connection_DisplayName')]",
         "parameterValues": {
