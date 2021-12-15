@@ -40,21 +40,21 @@
       "metadata": {
         "description": "Host server address"
       },
-      "defaultValue": "test.rebex.net"
+     "defaultValue": ""
     },
     "sftpwithssh_1_userName": {
       "type": "string",
       "metadata": {
         "description": "User name"
       },
-      "defaultValue": "demo"
+      "defaultValue": ""
     },
     "sftpwithssh_1_password": {
       "type": "securestring",
       "metadata": {
         "description": "Password"
       },
-      "defaultValue": "password"
+      "defaultValue": ""
     },
     "sftpwithssh_1_sshPrivateKey": {
       "type": "securestring",
@@ -75,7 +75,7 @@
       "metadata": {
         "description": "SFTP port number (example: 22)"
       },
-      "defaultValue": 22
+      "defaultValue": null
     },
     "sftpwithssh_1_acceptAnySshHostKey": {
       "type": "bool",
@@ -118,7 +118,7 @@
               "inputs": {
                 "host": {
                   "connection": {
-                    "name": "@parameters('$connections')['sftpwithssh']['connectionId']"
+                    "name": "@parameters('$connections')['sftpwithssh1']['connectionId']"
                   }
                 },
                 "method": "post",
@@ -145,7 +145,7 @@
               "inputs": {
                 "host": {
                   "connection": {
-                    "name": "@parameters('$connections')['sftpwithssh']['connectionId']"
+                    "name": "@parameters('$connections')['sftpwithssh1']['connectionId']"
                   }
                 },
                 "method": "get",
@@ -178,7 +178,7 @@
                 "content": "@{body('Get_file_content')}",
                 "integrationAccount": {
                   "map": {
-                    "name": "XML-Text"
+                    "name": "XML-TEXT"
                   }
                 }
               },
@@ -210,8 +210,8 @@
         "parameters": {
           "$connections": {
             "value": {
-              "sftpwithssh": {
-                "id": "[concat(subscription().id, '/providers/Microsoft.Web/locations/', parameters('logicAppLocation'), '/managedApis/', 'sftpwithssh')]",
+              "sftpwithssh1": {
+                "id": "[concat(subscription().id, '/providers/Microsoft.Web/locations/', parameters('logicAppLocation'), '/managedApis/', 'sftpwithssh1')]",
                 "connectionId": "[resourceId('Microsoft.Web/connections', parameters('sftpwithssh_1_Connection_Name'))]",
                 "connectionName": "[parameters('sftpwithssh_1_Connection_Name')]"
               }
@@ -233,7 +233,7 @@
       "location": "[parameters('logicAppLocation')]",
       "properties": {
         "api": {
-          "id": "[concat(subscription().id, '/providers/Microsoft.Web/locations/', parameters('logicAppLocation'), '/managedApis/', 'sftpwithssh')]"
+          "id": "[concat(subscription().id, '/providers/Microsoft.Web/locations/', parameters('logicAppLocation'), '/managedApis/', 'sftpwithssh1')]"
         },
         "displayName": "[parameters('sftpwithssh_1_Connection_DisplayName')]",
         "parameterValues": {
