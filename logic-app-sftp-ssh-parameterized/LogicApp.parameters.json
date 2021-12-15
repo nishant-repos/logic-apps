@@ -6,16 +6,16 @@
       "value": "logic-sftp-ssh-2"
     },
     "logicAppLocation": {
-      "value": "southindia"
+      "value": "centralindia"
     },
     "integration_account": {
-      "value": "ia-logic-demo"
+      "value": "ia-logic_app"
     },
     "LogicAppIntegrationAccount": {
-      "value": "/subscriptions/16be532f-d207-4d70-966d-c6ba9ad7d410/resourcegroups/Naman-Interns-RG/providers/Microsoft.Logic/integrationAccounts/ia-logic-demo"
+      "value": "/subscriptions/16be532f-d207-4d70-966d-c6ba9ad7d410/resourcegroups/Naman-Interns-RG/providers/Microsoft.Logic/integrationAccounts/ia-logic_app"
     },
     "sftpwithssh_1_Connection_Name": {
-      "value": "sftpwithssh-1"
+      "value": "sftpwithssh"
     },
     "sftpwithssh_1_hostName": {
       "value": "test.rebex.net"
