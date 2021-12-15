@@ -15,7 +15,7 @@
       "value": "/subscriptions/16be532f-d207-4d70-966d-c6ba9ad7d410/resourcegroups/Naman-Interns-RG/providers/Microsoft.Logic/integrationAccounts/ia-logic-demo"
     },
     "sftpwithssh_1_Connection_Name": {
-      "value": "sftpwithssh-1"
+      "value": "NewSFTP"
     },
     "sftpwithssh_1_hostName": {
       "value": "test.rebex.net"
