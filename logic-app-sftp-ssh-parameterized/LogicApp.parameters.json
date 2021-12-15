@@ -12,7 +12,7 @@
       "value": "ia-logic_app"
     },
     "LogicAppIntegrationAccount": {
-      "value": "/subscriptions/16be532f-d207-4d70-966d-c6ba9ad7d410/resourcegroups/Naman-Interns-RG/providers/Microsoft.Logic/integrationAccounts/[parameters('integration_account')]"
+      "value": "[concat('/subscriptions/16be532f-d207-4d70-966d-c6ba9ad7d410/resourcegroups/Naman-Interns-RG/providers/Microsoft.Logic/integrationAccounts/', parameters('integration_account'))]"
     },
     "sftpwithssh_1_Connection_Name": {
       "value": "sftpwithssh"
