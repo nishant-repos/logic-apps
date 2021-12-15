@@ -19,6 +19,7 @@
       }
     },
     "integration_account": {
+      "type": "string",
       "value": ""
     },
     "LogicAppIntegrationAccount": {
