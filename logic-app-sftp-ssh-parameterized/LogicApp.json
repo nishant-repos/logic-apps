@@ -20,7 +20,7 @@
     },
     "integration_account": {
       "type": "string",
-      "value": ""
+      "defaultValue": ""
     },
     "LogicAppIntegrationAccount": {
       "type": "string",
